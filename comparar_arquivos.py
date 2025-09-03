@@ -73,8 +73,8 @@ def extrair_texto_pdf(file_like):
         return ''.join([page.extract_text() or "" for page in pdf.pages])
 
 # ====== UI Streamlit ======
-st.set_page_config(page_title="Comparar PDFs – Serviços", layout="centered")
-st.title("Comparar PDFs de Orçamento (Serviços)")
+st.set_page_config(page_title="Comparar PDFs", layout="centered")
+st.title("Comparar PDFs de Orçamento")
 
 st.markdown(
     "Faça upload de **dois PDFs** do orçamento. O app extrai a seção **Serviços** "
